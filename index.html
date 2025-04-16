@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="quiz-app">
+            <header>
+                <h1>Interactive Quiz</h1>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <div class="info">
+                    <div class="count">Question <span id="current">1</span> of <span id="total">10</span></div>
+                    <div class="score">Score: <span id="score">0</span></div>
+                </div>
+            </header>
+            
+            <div class="quiz-body">
+                <!-- Start Screen -->
+                <div id="start-container">
+                    <h2>Welcome to the Quiz!</h2>
+                    <p>Test your knowledge with 10 interesting questions.</p>
+                    <button id="start-button" class="btn btn-large">Start Quiz</button>
+                </div>
+                
+                <!-- Question Screen -->
+                <div id="question-container" class="hidden">
+                    <h2 id="question-text">Question text will appear here</h2>
+                    <div class="options-container" id="options-container">
+                        <!-- Options will be inserted here by JavaScript -->
+                    </div>
+                </div>
+                
+                <!-- Basic Result Screen -->
+                <div id="result-container" class="hidden">
+                    <h2>Quiz Completed!</h2>
+                    <div class="final-score">
+                        <span id="final-score">0</span> / 10
+                    </div>
+                    <div class="result-message" id="result-message">
+                        <!-- Result message will be inserted here by JavaScript -->
+                    </div>
+                    
+                    <!-- Detailed Results Section -->
+                    <div class="detailed-results" id="detailed-results">
+                        <h3>Review Your Answers</h3>
+                        <div id="questions-review">
+                            <!-- Questions review will be inserted here by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <button id="restart-button" class="btn">Restart Quiz</button>
+                </div>
+            </div>
+
+            <footer id="quiz-footer">
+                <!-- No more prev/next buttons as requested -->
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
